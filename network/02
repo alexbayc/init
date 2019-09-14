@@ -1,0 +1,3 @@
+ifconfig | grep broad | awk '{print $6}'
+
+arp -a | awk '{print $2}' | cut -d ')' -f 1 | cut -d '(' -f 2

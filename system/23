@@ -1,0 +1,8 @@
+create a new user:
+sudo adduser <username>
+give him rights:
+sudo usermod -aG sudo <username>
+switch between users:
+su - <username>
+enter password and check it:
+whoami

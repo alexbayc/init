@@ -1,0 +1,1 @@
+sudo du -sb /var/* | awk '{print "The exact size of folder " $2 " is - " $1 " bytes"}'

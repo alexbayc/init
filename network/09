@@ -1,0 +1,8 @@
+ping -c 1 42.fr | grep 'from'  |awk '{print $4}'| cut -d ':' -f 1
+//or
+nslookup 42.fr 8.8.4.4 | grep 'Address' | grep -v '8.8.4.4' | awk '{print $2}'
+
+output:
+163.172.250.13
+163.172.250.11
+163.172.250.12
